@@ -10,14 +10,6 @@
     "license": [
         "MIT"
     ],
-    "extra": {
-        "map": [
-            [
-                "*",
-                "TBat/Converter"
-            ]
-        ]
-    },
     "autoload": {
         "files": [
             "registration.php"
