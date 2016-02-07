@@ -1,0 +1,39 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+?>
+<div id="converter-container">
+<form class="form"
+      action="<?php /* @escapeNotVerified */ echo $block->getFormAction(); ?>"
+      id="converter"
+      method="post"
+      data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset col-l-1">
+        <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Currency Converter') ?></span></legend><br />
+        <div class="field note no-label"><?php /* @escapeNotVerified */ echo __('Convert RUB to PLN') ?></div>
+        <div class="field name required form-group">
+            <label class="label" for="base-value"><span><?php /* @escapeNotVerified */ echo __($this->getDefaultBaseSymbol()) ?></span></label>
+            <div class="control">
+                <input name="base_value" id="base-value" value="" class="input-text" type="text" data-validate="{required:true, 'validate-greater-than-zero':true}" title="This should be a float number e.g. 12.50"/>
+            </div>
+        </div>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>" class="submit primary">
+                    <span><?php /* @escapeNotVerified */ echo __('Convert to PLN') ?></span>
+                </button>
+            </div>
+        </div>
+        <div><input type="hidden" name="base" value="<?php echo $this->getDefaultBaseSymbol(); ?>"/></div>
+        <div><input type="hidden" name="exchange" value="<?php echo $this->getDefaultExchangeSymbol(); ?>"/></div>
+        <div class="field">
+            <label class="label" for="exchange-value"><span><?php /* @escapeNotVerified */ echo __($this->getDefaultExchangeSymbol()) ?></span></label>
+            <div class="control">
+                <input name="exchange_value" id="exchange-value" title="<?php /* @escapeNotVerified */ echo __($this->getDefaultExchangeSymbol()) ?>" class="input-text" type="text" readonly="readonly"/>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</div>

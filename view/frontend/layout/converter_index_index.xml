@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="TBat_Converter::js/converter.js"/>
+        <script src="TBat_Converter::css/converter.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block template="form.phtml" class="TBat\Converter\Block\ConverterForm" name="tbat_converter">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

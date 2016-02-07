@@ -1,0 +1,10 @@
+#converter-container {
+    border: medium solid #c5c8c5;
+    margin: auto;
+    padding: 2em;
+    width: 50%;
+}
+
+#converter-container label{
+    padding-top: 0.8em;
+}
