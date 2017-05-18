@@ -31,7 +31,7 @@ class Post extends Controller\Index
     {
         //first of all validate request
         $post = $this->getRequest()->getPostValue();
-        if (!$this->getRequest()->isXmlHttpRequest() || !$post) {echo "Asd";exit;
+        if (!$this->getRequest()->isXmlHttpRequest() || !$post) {
             $this->_redirect('*/*/');
             return;
         }
